@@ -86,3 +86,13 @@
 - mission-practice-ubuntu 컨테이너 생성 및 실행 상태 확인
 - docker exec로 실행 중인 컨테이너 내부 접속
 - docker attach로 컨테이너 접속 후 Ctrl+P, Ctrl+Q로 분리
+
+### 7. Dockerfile을 이용한 사용자 정의 이미지 제작 (2026-11-03)
+
+- practice/dockerfile/Dockerfile 직접 작성
+- Ubuntu latest 이미지를 기반 이미지로 지정
+- CMD 명령어로 사용자 지정 메시지 출력 설정
+- docker build -t mission-practice:1.0 실행하여 이미지 생성
+- docker images로 생성된 이미지 확인
+- docker run --rm mission-practice:1.0 실행
+- "Hello from my custom Docker image!" 출력 확인
