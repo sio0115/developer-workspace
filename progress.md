@@ -73,3 +73,16 @@
 - mv: 복사한 파일 이름 변경
 - rm: 이름을 변경한 파일 삭제
 - 실습 결과를 practice/git-bash-practice.txt에 별도 저장
+
+### 6. 새 PC에서 Docker 기본 실습 (2026-11-03)
+
+- Docker 버전 29.9.2 확인
+- docker run hello-world 실행 및 성공 메시지 확인
+- Ubuntu 컨테이너 실행 후 pwd 명령어 확인 및 종료
+- docker images로 이미지 목록 확인
+- docker ps 및 docker ps -a로 컨테이너 상태 확인
+- docker logs로 hello-world 실행 로그 확인
+- docker stats --no-stream으로 컨테이너 자원 사용량 확인
+- mission-practice-ubuntu 컨테이너 생성 및 실행 상태 확인
+- docker exec로 실행 중인 컨테이너 내부 접속
+- docker attach로 컨테이너 접속 후 Ctrl+P, Ctrl+Q로 분리
