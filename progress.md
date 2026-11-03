@@ -96,3 +96,27 @@
 - docker images로 생성된 이미지 확인
 - docker run --rm mission-practice:1.0 실행
 - "Hello from my custom Docker image!" 출력 확인
+
+### 8. Docker 포트 매핑 실습 (2026-11-03)
+
+- Nginx 공식 이미지 다운로드
+- mission-port-test 컨테이너 실행
+- 호스트 8080번 포트와 컨테이너 80번 포트 연결
+- docker ps로 포트 매핑 상태 확인
+- 브라우저에서 http://localhost:8080 접속
+- Nginx 환영 페이지 출력 확인
+
+### 9. Docker Bind Mount 실습 (2026-11-03)
+
+- practice/bind-mount 폴더 생성
+- host-file.txt 파일 생성 및 내용 작성
+- 호스트 폴더를 컨테이너 내부 /shared 폴더에 연결
+- 컨테이너 내부에서 호스트 파일 내용 확인
+
+### 10. Docker Volume 실습 (2026-11-03)
+
+- mission-practice-volume 생성
+- Volume을 컨테이너 내부 /data 폴더에 연결
+- volume-test.txt 파일 저장
+- 새 컨테이너에서 파일 내용 확인
+- 컨테이너 실행 종료 후에도 Volume 데이터 유지 확인
